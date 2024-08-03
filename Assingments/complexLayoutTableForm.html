@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Complex Form</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested Table Form</h1>
+    <table>
+       <tr>
+            <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="Name">First Name:
+                                    <input type="text">
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="Name">Last Name:
+                                    <input type="text">
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Country:
+                                <select name="country" >
+                                    <option value="India">INDIA</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Japan">JAPAN</option>
+                                    <option value="Russia">RUSSIA</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+            </td>
+            <td>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </td>
+       </tr>
+
+       <tr>
+        <td>
+            <table>
+                <tr>
+                    <label for="comments">Comment:
+                        <textarea name="textarea" rows="3" cols="50"></textarea>
+                    </label>
+                </tr>
+            </table>
+        </td>
+
+        <td>
+            <table>
+                <tr>
+                    <button>Submit</button>
+                </tr>
+            </table>
+        </td>
+       </tr>
+    </table>
+</body>
+</html>

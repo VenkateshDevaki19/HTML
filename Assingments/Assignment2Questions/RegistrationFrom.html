@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:#f4f4f4;
+        }
+        #h1form{
+            text-align: left;
+            padding: 20px;
+            background-color: #4CAF50;
+            color:white;
+        }
+        #divForm{
+            text-align: left;
+            border: 1px solid black;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            background-color: wheat;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        #divForm button:hover{
+            background-color: #45a049;
+        }
+        #divForm input[type="radio"],
+        #divForm input[type="checkbox"]{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="h1form">Registration Form </h1>
+
+    <div id="divForm">
+        <label for="FullName">Full Name: 
+            <input type="text" name="FullName" required>
+        </label>
+
+        <br><br>
+           
+        <label for="Email Address">Email:
+            <input type="email" name="Email" placeholder="John@gmail.com" required>
+        </label>
+        <br><br>
+
+        <label for="Password">Password:
+            <input type="password" placeholder="password" required>
+        </label>
+        <br><br>
+
+        <label for="CPassword">Confirm Password:
+            <input type="text" placeholder="Confirm Password" required>
+        </label>
+        <br><br>
+
+        <label for="DOB">Date of Birth:
+            <input type="date">
+        </label>
+        <br><br>
+
+        <label for="Gender">Gender: 
+            <select>
+                <option value="Male">Male</option>
+                <option value="Fe-male">Female</option>
+                <option value="Other">other</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label for="Sub">Subscription:
+            <input type="radio" name="subscription"value="Free">Free
+            <input type="radio" name="subscription" value="Basic"> Basic
+            <input type="radio" name="subscription" value="Premium">Premium
+        </label>
+        <br><br>
+
+        <label for="Hobbies">Select Hobbies:
+            <br>
+            <input type="checkbox" name="Reading" id="">Reading
+            <input type="checkbox" name="Traveling" id="">Traveling
+            <input type="checkbox" name="Coding" id="">Coding
+            <input type="checkbox" name="Sports" id="">Sports
+            <input type="checkbox" name="ESports" id="">ESports
+        </label>
+        <br><br>
+
+        <label for="Profile Pic">Profile Picture:
+            <input type="file" name="Pic" id="PP">
+        </label>
+        <br><br>
+
+        <label for="Submit Button">
+            <button type="button" id="button1">Submit</button>
+        </label>
+
+    </div>
+    
+</body>
+</html>

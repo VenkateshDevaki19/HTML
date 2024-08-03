@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Normal form</title>
+    <link rel="icon" href="https://download.logo.wine/logo/Microsoft_Forms/Microsoft_Forms-Logo.wine.png">
+    <style>
+        #form1{
+            
+            /* border: 1px solid black;*/
+            text-align: left;
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        .form2{
+           /* border: 1px solid black;*/
+            
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #hov:hover{
+            background-color: lightcoral;
+            border-radius: 10px;
+            color: lightcoral;
+        }
+        #submit-btn{
+            text-align: center;
+        }
+
+        
+        
+    </style>
+
+</head>
+<body background="https://wallpapercave.com/wp/wp4390828.jpg">
+    <h3 style="text-align: center;">Form Page</h3>
+    <div class="form2">
+        <h2 id="hov">Signup</h2>
+        <h2>Login</h2>
+    </div>
+    <!--<form>
+        First Name: <input type="text" placeholder="Enter your first name" max="10">
+        <br>
+        Last Name: <input type="text" placeholder="Enter your last name" max="10">
+        <br>
+        Email: <input type="email" placeholder="Enter your email address">
+        <br>
+        Gender: <input type="radio">Male <input type="radio">female
+        <br>
+        <button>Submit</button>
+    </form>
+-->
+    <div id="form1">
+    <form action="submit page" method="post">
+        <label>First Name: 
+            <input type="text" id=" FirstName"  placeholder="Please enter your FirstName" required>
+        </label>
+        <br><br>
+        <label for="LastName" >LastName:
+            <input type="text" id="LastName" placeholder="Please enter your LastName" required>
+        </label>
+        <br>
+        <br>
+        <label for="Password">Password:
+            <input type="password" id="password" placeholder="Please give new password" required>
+        </label>
+        <br><br>
+        <label for="Email">Email:
+            <input type="email" id="=email" placeholder="Please enter your email">
+        </label>
+        <br><br>
+        <label for="Gender">Gender:
+            <input type="radio" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="Other">
+            <label for="other">Other</label>
+        </label>
+        <br><br>
+    </form>
+    </div>
+    <div id="submit-btn">
+        <label for="Submit">
+            <input type="button" value="Submit">
+        </label>
+    </div>
+</body>
+</html>
