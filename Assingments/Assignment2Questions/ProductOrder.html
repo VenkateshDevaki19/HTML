@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: whitesmoke;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        form{
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label{
+            display: block;
+            margin: 5px;
+            padding: auto;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+             width: 100%;
+             padding: 10px;
+             border: 1px solid #333;
+             border-radius: 4px;
+             box-sizing: border-box;
+             transition: border-color 0.3s;
+        }
+        #btn{
+            text-align: center;
+            justify-content: center;
+        }
+        #btn:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Order Form</h1>
+    <div class="container">
+        <form action="", method="post">
+            <div class="UserName">
+                <label for="UserName">Full Name:</label>
+                <input type="text" placeholder="Enter your full name" required minlength="2" maxlength="20">
+            </div>
+            <br>
+
+            <div class="Email">
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="Enter your email address" required minlength="2" maxlength="20">
+            </div>
+            <br>
+
+            <div>
+                <label for="Dropdown">Category:</label>
+                <select name="product" id="CProduct">
+                    <option value="">-Select Category-</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="books">Books</option>
+                    <option value="clothing">Clothing</option>
+                </select>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="Dropdown">Subcategory:</label>
+                <select name="product" id="CProduct">
+                    <option value="">-Select Category-</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Quantity">Select Quantity:</label>
+                <input type="number" name="Quantity" id="" min="0" max="10">
+            </div>
+            <br>
+
+            <div>
+                <label for="Date">Preferred delivery date: 
+                    <input type="date" name="delivery date" id=""> 
+                </label>
+            </div>
+            <br>
+
+            <div>
+                <label for="time">Preferred delivery time:</label>
+                <input type="time" name="delivery time" id="">
+            </div>
+
+            <br>
+            <div>
+                <label for="textArea">Additional Notes:</label>
+                <textarea name="textarea" id="comments" rows="4"></textarea>
+            </div>
+            <br><br>
+
+            <div>
+                <label for="Payment">Payment options: 
+                    <br><input type="checkbox" name="Payment" >Credit Card
+                    <br><input type="checkbox" name="payment" >PayPal
+                    <br><input type="checkbox" name="Payment" >Bank Transfer
+                </label>
+            </div>
+            <br>
+
+
+            <div>
+                <button id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

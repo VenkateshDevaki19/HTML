@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Form</title>
+    <style>
+        .btn{
+            width: 80px;
+            height: 30px;
+            background-color: bisque;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        .btn:hover{
+            background-color: brown;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="form">
+        <label for="userName">Full Name: 
+            <input type="text" placeholder="Please enter you full name" minlength="2" maxlength="20" required>
+        </label>
+        <br><br>
+
+        <label for="email">Email:
+            <input type="email" placeholder="John@gmail.com" required>
+        </label>
+        <br><br>
+
+        <label for="TextArea">TextArea:
+            <textarea name="text" rows="4" cols="20" placeholder="Enter your feedback here"></textarea>
+        </label>
+        <br><br>
+
+        <label for="Rating"> Service Rating:
+            <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span>
+        </label>
+        <!-- <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+          </div> -->
+        <br><br>
+
+
+        <label for="Feedback">Feedback Type:
+            <br><input type="radio" name="radio">Compliment
+            <br><input type="radio" name="radio">Complaint
+            <br><input type="radio" name="radio">Suggestion
+        </label>
+        <br><br>
+
+        <label for="CheckBox"> 
+            <input type="checkbox" name="validate" required> Please read below feedback policy and click on check box.
+        </label>
+        <br>
+
+        <a href="C:\Users\venkatesh\OneDrive\Documents\HTML Practice\Basics\anachortag.html">Feedback Policy</a>
+        <br><br>
+        
+        <button name="button" class="btn" title="Submit">Submit</button>
+    </form>
+
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+    
+</body>
+</html>
