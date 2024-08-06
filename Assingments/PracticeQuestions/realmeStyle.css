@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 30px;
+}
+
+#container{
+    max-width: 450px;
+    padding: 40px;
+    background-color: black;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 5rem;
+    text-align: left;
+    background-color: lightgrey;
+    color: black;
+}
+
+#Keys{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 80px);
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#Keys >button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    border-radius: 100px;
+}
+
+.organe{
+    background-color: orange;
+}
+
+.red{
+    background-color: red;
+}
+.grey{
+    background-color: grey;
+}
