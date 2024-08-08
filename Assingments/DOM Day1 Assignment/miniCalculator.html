@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+<body>
+
+    <h6>Enter first Value: </h6>
+    <input type="number" id="firstValue" value="">
+
+    <br>
+    <h6>Enter second Value: </h6>
+    <input type="number" id="secondValue" value="">
+
+    <br>
+    <h6>output: </h6> 
+    <p id="output">value</p>
+    <!-- <input type="text" id="output" value=""> -->
+
+
+    <br><br>
+    <button onclick="addition()">Add</button>
+    <button onclick="Subtract()">Subtract</button>
+    <button onclick="Multiply()">Multiply</button>
+    <button onclick="division()">Divide</button>
+</body>
+</html>
+
+<script>
+    function addition(){
+        let value1 = parseFloat(document.getElementById("firstValue").value) ;
+        let value2 = parseFloat(document.getElementById("secondValue").value);
+        let add = value1+value2
+        console.log(add);
+        document.getElementById("output").innerText = add;
+        alert(add);
+    }
+    function Subtract(){
+        let value1 = parseFloat(document.getElementById("firstValue").value) ;
+        let value2 = parseFloat(document.getElementById("secondValue").value);
+        let sub = value1-value2;
+        console.log(sub);
+        document.getElementById("output").innerText = sub;
+        alert(sub);
+    }
+
+    function Multiply(){
+        let value1 = parseFloat(document.getElementById("firstValue").value) ;
+        let value2 = parseFloat(document.getElementById("secondValue").value);
+        let mul = value1*value2;
+        console.log(mul);
+        document.getElementById("output").innerText = mul;
+        alert(mul);
+    }
+    function division(){
+        let value1 = parseFloat(document.getElementById("firstValue").value) ;
+        let value2 = parseFloat(document.getElementById("secondValue").value);
+        let divi = value1/value2;
+        console.log(divi);
+        document.getElementById("output").innerText = divi;
+        alert(divi);
+    }
+</script>
